@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34407.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectPhaseOneApp", "ProjectPhaseOneApp\ProjectPhaseOneApp.csproj", "{F11CB0E9-25F9-4712-9137-8FBE97654018}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B6AE6425-2B58-418A-84A3-2EFD460A40A3} = {B6AE6425-2B58-418A-84A3-2EFD460A40A3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerLibrary", "PlayerLibrary\PlayerLibrary.csproj", "{B6AE6425-2B58-418A-84A3-2EFD460A40A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F11CB0E9-25F9-4712-9137-8FBE97654018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F11CB0E9-25F9-4712-9137-8FBE97654018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F11CB0E9-25F9-4712-9137-8FBE97654018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F11CB0E9-25F9-4712-9137-8FBE97654018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6AE6425-2B58-418A-84A3-2EFD460A40A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6AE6425-2B58-418A-84A3-2EFD460A40A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6AE6425-2B58-418A-84A3-2EFD460A40A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6AE6425-2B58-418A-84A3-2EFD460A40A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {017B2653-1E2D-49B1-BAEB-FE2F2F85ED92}
+	EndGlobalSection
+EndGlobal
