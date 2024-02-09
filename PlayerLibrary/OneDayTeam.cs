@@ -25,8 +25,8 @@ namespace PlayerLibrary
             else
             {
                 Console.Write("Enter Player ID: ");
-                p.PlayerId = Convert.ToInt32(Console.ReadLine());
-                if (oneDayTeam.Exists(Player => Player.PlayerId == p.PlayerId))
+                p.Id = Convert.ToInt32(Console.ReadLine());
+                if (oneDayTeam.Exists(Player => Player.Id == p.Id))
                 {
                     Console.WriteLine("Player already exists");
 
@@ -34,9 +34,9 @@ namespace PlayerLibrary
                 else
                 {
                     Console.Write("Enter Player Name: ");
-                    p.PlayerName = Console.ReadLine();
+                    p.Name = Console.ReadLine();
                     Console.Write("Enter Player Age: ");
-                    p.PlayerAge = Convert.ToInt32(Console.ReadLine());
+                    p.Age = Convert.ToInt32(Console.ReadLine());
                     oneDayTeam.Add(p);
                     Console.WriteLine("Player is added successfully");
                 }
@@ -49,9 +49,9 @@ namespace PlayerLibrary
         {
             foreach (var item in oneDayTeam)
             {
-                Console.WriteLine($"Player Id: {item.PlayerId}");
-                Console.WriteLine($"Player Name: {item.PlayerName}");
-                Console.WriteLine($"Player Age: {item.PlayerAge}");
+                Console.WriteLine($"Player Id: {item.Id}");
+                Console.WriteLine($"Player Name: {item.Name}");
+                Console.WriteLine($"Player Age: {item.Age}");
 
             }
             return oneDayTeam;
@@ -65,9 +65,9 @@ namespace PlayerLibrary
 
             foreach (var p in oneDayTeam)
             {
-                if (p.PlayerId == playerIdDisplay)
+                if (p.Id == playerIdDisplay)
                 {
-                    Console.WriteLine($"Player ID:{p.PlayerId} Player Name:{p.PlayerName} Player Age:{p.PlayerAge}");
+                    Console.WriteLine($"Player ID:{p.Id} Player Name:{p.Name} Player Age:{p.Age}");
 
                 }
 
@@ -84,9 +84,9 @@ namespace PlayerLibrary
             string playerNameDisplay = Console.ReadLine();
             foreach (var p in oneDayTeam)
             {
-                if (p.PlayerName == playerNameDisplay)
+                if (p.Name == playerNameDisplay)
                 {
-                    Console.WriteLine($"Player ID:{p.PlayerId} Player Name:{p.PlayerName} Player Age:{p.PlayerAge}");
+                    Console.WriteLine($"Player ID:{p.Id} Player Name:{p.Name} Player Age:{p.Age}");
 
                 }
 
@@ -99,7 +99,7 @@ namespace PlayerLibrary
         {
             Console.Write("Enter player Id to be removed: ");
             int playerRemove = Convert.ToInt32(Console.ReadLine());
-            Player p3 = oneDayTeam.Find(Player1 => Player1.PlayerId == playerRemove);
+            Player p3 = oneDayTeam.Find(Player1 => Player1.Id == playerRemove);
             if (p3 != null)
             {
                 oneDayTeam.Remove(p3);
